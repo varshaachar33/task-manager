@@ -56,6 +56,54 @@ This app does **not use user authentication**.
 
 ---
 
+## 📸 Screenshots
+
+| Home | Add Task | Completed |
+|------|----------|------------|
+| ![](screenshots/home_screen.png) | ![](screenshots/addscreen.png) | ![](screenshots/completedscreen.png) |
+
+| Pending | Filtered View |
+|---------|--------------|
+| ![](screenshots/pendingscreen.png) | ![](screenshots/filteredview.png) |
+
+---
+
+## 🔧 Setup Instructions
+
+1. Clone the repository
+2. Add your Firebase google-services.json
+3. Sync Gradle
+4. Run on emulator/device
+
+---
+
+## 📂 Project Structure
+
+```
+app/
+├── manifests/
+│
+├── kotlin+java/com.example.taskmanager/
+│   ├── data/
+│   │   ├── Task.kt
+│   │   ├── TaskDao.kt
+│   │   ├── TaskDatabase.kt
+│   │   └── TaskRepository.kt
+│   │
+│   ├── ui/
+│   │   ├── TaskActivity.kt
+│   │   ├── TaskAdapter.kt
+│   │   └── TaskViewModel.kt
+│
+├── res/
+│
+└── Gradle Scripts
+```
+
+The project follows a clean MVVM architecture with a clear separation between UI and data layers.
+
+---
+
 ## 🛠️ Tech Stack
 
 - Kotlin
@@ -90,4 +138,4 @@ This app does **not use user authentication**.
 
 ## 👤 Author
 
-Developed as part of Android learning and interview preparation.
+Developed as part of advanced Android practice to demonstrate offline-first architecture using MVVM, Room, Kotlin Flow, and Firebase Firestore synchronization.
